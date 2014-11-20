@@ -9,6 +9,7 @@ class Xsoldier < Formula
   depends_on "sdl"
   depends_on "sdl_image"
 
+
   def install
     sdl = Formula["sdl"].opt_prefix
     sdl_image = Formula["sdl_image"].opt_prefix
