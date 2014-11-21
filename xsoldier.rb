@@ -16,7 +16,7 @@ class Xsoldier < Formula
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
-    system "make", "CFLAGS=-DHAVE_MALLOC_H=1 -DHAVE_STDIO_H=1 -DHAVE_LIBSDL=1 \
+    system "make", "CFLAGS=-DHAVE_MALLOC_H=1 -DHAVE_STDIO_H=0 -DHAVE_LIBSDL=1 \
                     -I/usr/include/sys -I#{sdl}/include/SDL \
                     -I#{sdl_image}/include/SDL", "LDFLAGS=-L#{sdl}/lib \
                     -L#{sdl_image}/lib #{sdl}/lib/libSDLmain.a  -lSDL \
